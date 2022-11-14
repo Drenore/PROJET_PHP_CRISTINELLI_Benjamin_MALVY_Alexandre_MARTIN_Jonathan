@@ -1,0 +1,57 @@
+/*
+    Principe de reset
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*
+    Spécificitées de la fenêtre
+*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+header, main, footer {
+    padding: 0px
+}
+
+main {
+    position: relative;
+    height: 80%;
+}
+
+header {
+    height:10%;
+    top: 0px;
+}
+
+footer {
+    height: 10%;
+    text-align: center;
+}
+
+/*
+    Spécificitées des éléments qui compose la fenêtre
+*/
+
+.navbar-item.active{
+    font-weight: bold;
+    border-left: 5px solid #00d1b2;
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+/**/
