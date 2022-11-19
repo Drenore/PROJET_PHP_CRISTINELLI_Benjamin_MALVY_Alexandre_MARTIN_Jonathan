@@ -1,0 +1,101 @@
+/*
+    Importation des fonts
+*/
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400;500;600;700;800&display=swap');
+
+/*
+    Principe de reset
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+    }
+    header, main, footer {
+        padding: 0px
+    }
+
+    main{
+        position: relative;
+        min-height: 80vh;
+    }
+    h1, h2, h3, h4, h5{
+        font-family: "Sono";
+    }
+
+    header {
+        height:10%;
+        top: 0px;
+    }
+
+    footer {
+        min-height: 13.7vh;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: azure;
+    }
+footer a{
+    font-weight: 500;
+    color: white;
+}
+footer a:hover{
+    font-weight: 500;
+    color: black;
+    text-decoration: underline;
+
+}
+.navbar-item.active{
+    font-weight: bold;
+    border-left: 5px solid #00d1b2;
+}
+
+.section{
+    display: none;
+}
+.section.active{
+    display: block;
+}
+/*Input modif */
+
+#connexion input, #inscription .control{
+    width: 500px;
+    margin: auto;
+}
+#conexion {
+    position: relative;
+}
+#connexion section, #inscription section{
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#accueil .control input{
+    width: 1200px;
+}
+#accueil .button{
+    height: 60px;
+    width: 100px;
+}
+@media screen and (max-width: 1400px) {
+    #accueil .control input{
+        width: 800px;
+    }
+}
+
+
+/* Animation CSS */
+.swing-in-top-fwd{animation:swing-in-top-fwd 3s cubic-bezier(.175,.885,.32,1.275) both}
+
+@keyframes swing-in-top-fwd{0%{transform:rotateX(-100deg);transform-origin:top;opacity:0}100%{transform:rotateX(0deg);transform-origin:top;opacity:1}}
